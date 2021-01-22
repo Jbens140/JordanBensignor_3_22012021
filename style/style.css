@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('shrikhand-regular-webfont.woff2') format('woff2'),
+         url('shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('./police/Roboto-Regular.ttf');   
+
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./police/Roboto-Bold.ttf');
+}
+*:focus
+{
+    outline: 0 !important;
+}
+
+
+body
+{
+    margin: 0px;
+}
+
+.HeaderImg {
+    width: 50%;
+    display: block;
+    margin: 25px auto 15px auto;
+}
+.fas.fa-map-marker-alt
+{
+    margin: auto 15% auto 85%;
+    font-size: 125%;
+    color: rgba(31, 30, 30, 0.863);
+    
+}
+.Location
+{
+    font-family:'Roboto-Bold';
+    font-size: 120%;
+    color: rgba(0, 0, 0, 0.692);
+}
+.GridLocation
+{
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns: 30% 70%;
+    gap: 15px;
+    border-color: black;
+    background-color: rgba(214, 211, 211, 0.513);
+    box-shadow: 0px 5px 5px -5px rgb(170, 169, 169) inset;
+    padding: 20px 0px 20px 0px;
+    
+}
+.GridExploration
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgba(143, 142, 142, 0.089);
+    gap: 20px;
+    padding: 50px 0px 50px 0px;
+    
+    
+    
+}
+.TitleExploration
+{
+    font-family: 'Roboto-Bold';
+    text-align: center;
+    font-size: 185%;
+    letter-spacing: -0.5px;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+    
+}
+.SubTitleExploration
+{
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 140%;
+    color: rgba(22, 22, 22, 0.678);
+    letter-spacing: -1px;
+}
+.ButtonExploration
+{
+    font-family: 'Roboto';
+    border-radius: 30px 30px;
+    height: 60px;
+    font-size: 120%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.192) 0px 7px 7px;
+    margin: 4% auto 4% auto;
+}
+.ButtonExploration:hover
+{
+    background: linear-gradient(to bottom right,#ff79d9a4,#9256dca2);
+    box-shadow: rgba(0, 0, 0, 0.767) 0px 7px 7px; 
+    outline: none; 
+}
+
