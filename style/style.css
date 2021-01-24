@@ -104,7 +104,7 @@ body
 }
 .ButtonExploration:hover
 {
-    background: linear-gradient(to bottom right,#ff79d9a4,#9256dca2);
+    background: linear-gradient(to bottom right,#ff79d9ce,#9256dcc0);
     box-shadow: rgba(0, 0, 0, 0.767) 0px 7px 7px; 
     outline: none; 
 }
@@ -113,7 +113,8 @@ body
     font-family: 'Roboto-Bold';
     text-align: start;
     font-size: 160%;
-    padding: 0 0 5% 5%;
+    padding: 0 0 10% 5%;
+    margin-top: 10%;
 }
 .StepGrid
 {
@@ -121,38 +122,37 @@ body
     grid-template-columns: auto ;
     grid-template-rows: auto auto auto ;
     gap: 20px;
-    ;
+   
 }
 .StepTitle
 {
     border-radius: 20px;
-    /*border-color: rgba(189, 188, 188, 0.109);*/
     border-style:none;
     background-color: rgba(207, 207, 207, 0.233);
-    height: 30px;
-    padding: 5% 10% 5% 10%;
+    height: 25px;
+    padding: 6% 10% 5% 8%;
     width: 70%;
     box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px;
-    
-
-    
+    margin-left: 2.5%;
 }
 .FonctionTitle
 {
     font-family: 'Roboto-Bold';
     margin-left: 7%;
     color: black;
-    font-size: 90%;
+    font-size: 92%;
+    letter-spacing: -0.3px;
 }
 .fas.fa-mobile-alt
 {
-    font-size: 120%;
+    font-size: 130%;
     color: gray;
 }
 .fas.fa-list
 {
-    font-size: 120%;
+    font-size: 130%;
     color: gray;
+    
 }
 .fas.fa-store
 {
@@ -161,14 +161,43 @@ body
 }
 .Numbers
 {
-    font-family: 'Roboto-Bold';
-    border-radius: 30px 30px 30px 30px;
-    background-color: rgb(115, 31, 163);
-    color: white;
-    
-    
+    font-family: 'Roboto';
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    margin-top: 5.5%;
 }
 .FonctionCase
 {
-    margin-left: 10%;
+    margin-left:8%;
+}
+.StepTitle:hover
+{
+    background-color: #955add28;
+}
+.fas.fa-mobile-alt:hover
+{
+    color: #8c41e7;
+}
+.fas.fa-list:hover
+{
+    color: #8c41e7;
+}
+.fas.fa-store:hover
+{
+    color: #8c41e7;
+}
+.RestaurantsMainTitle
+{
+    font-family: 'Roboto-Bold';
+    text-align: start;
+    font-size: 160%;
+    padding: 20% 0 5% 5%;
+    margin-top: 10%;
 }
