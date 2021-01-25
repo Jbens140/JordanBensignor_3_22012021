@@ -20,6 +20,10 @@
 {
     outline: 0 !important;
 }
+a:link
+{
+    text-decoration: none;
+}
 
 
 body
@@ -119,38 +123,40 @@ body
 .StepGrid
 {
     display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto auto auto ;
-    gap: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px ;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    
+    
    
 }
 .StepTitle
 {
-    border-radius: 20px;
-    border-style:none;
-    background-color: rgba(207, 207, 207, 0.233);
-    height: 25px;
-    padding: 6% 10% 5% 8%;
-    width: 70%;
-    box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px;
-    margin-left: 2.5%;
+    position: absolute;
+    left: 15%;
 }
 .FonctionTitle
 {
     font-family: 'Roboto-Bold';
-    margin-left: 7%;
     color: black;
-    font-size: 92%;
+    font-size: 120%;
     letter-spacing: -0.3px;
+    position: absolute;
+    left: 25%;
+    
 }
 .fas.fa-mobile-alt
 {
-    font-size: 130%;
+    font-size: 150%;
     color: gray;
 }
 .fas.fa-list
 {
-    font-size: 130%;
+    font-size: 150%;
     color: gray;
     
 }
@@ -171,33 +177,102 @@ body
     align-items: center;
     color: #fff;
     position: absolute;
-    margin-top: 5.5%;
+    left: 2.5%;
+    
 }
 .FonctionCase
 {
-    margin-left:8%;
+    border-radius: 20px;
+    border-style:none;
+    background-color: rgba(207, 207, 207, 0.233);
+    height: 100%;
+    width: 90%;
+    box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
-.StepTitle:hover
+.FonctionCase:hover
 {
     background-color: #955add28;
 }
-.fas.fa-mobile-alt:hover
+.FonctionCase:hover .StepTitle
 {
-    color: #8c41e7;
-}
-.fas.fa-list:hover
+    color: #8c41e7
+} 
+.Container
 {
-    color: #8c41e7;
-}
-.fas.fa-store:hover
-{
-    color: #8c41e7;
+    background-color: rgba(143, 142, 142, 0.089);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 285px 285px 285px 285px ;
+    row-gap: 15px;
+    margin-top: 70px;
+
 }
 .RestaurantsMainTitle
 {
     font-family: 'Roboto-Bold';
     text-align: start;
     font-size: 160%;
-    padding: 20% 0 5% 5%;
-    margin-top: 10%;
+    margin: 60px 5% 0px 5%;
+}
+.Card
+{
+   background-color: #fff;
+   margin: 0px 5% 5% 5%;
+   height: 100%;
+   border-radius: 20px;
+   box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px 2px;
+   position: relative; 
+}
+.Cardbadge
+{
+    text-decoration-line:none;
+    font-family: 'Roboto-Bold';
+    background-color: #99E2D0;
+    color:#0d9e7a;
+    height: 33px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+.CardImg
+{
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}.far.fa-heart
+{
+    position:absolute;
+    right: 25px;
+    bottom: 40px;
+    font-size: 25px;
+}
+.RestaurantCardTitle
+{
+    font-family: 'Roboto-Bold';
+    color: black;
+    font-size: 130%;
+    margin-left: 15px;
+    margin-top: 15px;
+    letter-spacing: -0.5px;
+
+}
+.RestaurantCardSubTitle
+{
+    font-family: 'Roboto';
+    color: black;
+    font-size: 125%;
+    margin-left: 15px ;
+    margin-top: 5px;
+    letter-spacing: -0.5px;
 }
