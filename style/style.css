@@ -278,22 +278,21 @@ body
     background-color: white;
     
 }
-.far.fa-heart:active, .far.fa-heart:hover
+.fas.fa-heart:hover
 {
     
-       
-
-    
+    color: rgb(175, 95, 155);
+    opacity: 1;
 }
 .fas.fa-heart
 {
     position:absolute;
     right: 24px;
     bottom: 32px;
-    font-size: 29px;
+    font-size: 30px;
     border: none;
     cursor: pointer;
-    color: rgb(151, 45, 177);
+    opacity: 0;
 }
 .GridFooter
 {
