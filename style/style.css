@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'shrikhandregular';
-    src: url('shrikhand-regular-webfont.woff2') format('woff2'),
-         url('shrikhand-regular-webfont.woff') format('woff');
+    src: url('./police/shrikhand-regular-webfont.woff2');
+    src: url('./police/shrikhand-regular-webfont.woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,6 +16,7 @@
     font-family: 'Roboto-Bold';
     src: url('./police/Roboto-Bold.ttf');
 }
+
 *:focus
 {
     outline: 0 !important;
@@ -130,9 +131,6 @@ body
     align-content: center;
     text-align: center;
     align-items: center;
-    
-    
-   
 }
 .StepTitle
 {
@@ -147,7 +145,6 @@ body
     letter-spacing: -0.3px;
     position: absolute;
     left: 25%;
-    
 }
 .fas.fa-mobile-alt
 {
@@ -178,7 +175,6 @@ body
     color: #fff;
     position: absolute;
     left: 2.5%;
-    
 }
 .FonctionCase
 {
@@ -208,9 +204,10 @@ body
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100px 285px 285px 285px 285px ;
-    row-gap: 15px;
     margin-top: 70px;
-
+    row-gap: 22px;
+    padding-bottom: 60px;
+    
 }
 .RestaurantsMainTitle
 {
@@ -222,11 +219,11 @@ body
 .Card
 {
    background-color: #fff;
-   margin: 0px 5% 5% 5%;
-   height: 100%;
+   margin: 0px 5% 0px 5%;
+   height: 285px;
    border-radius: 20px;
    box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px 2px;
-   position: relative; 
+   position: relative;
 }
 .Cardbadge
 {
@@ -242,7 +239,6 @@ body
     position:absolute;
     top: 20px;
     right: 20px;
-    
 }
 .CardImg
 {
@@ -250,13 +246,8 @@ body
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-}.far.fa-heart
-{
-    position:absolute;
-    right: 25px;
-    bottom: 40px;
-    font-size: 25px;
 }
+
 .RestaurantCardTitle
 {
     font-family: 'Roboto-Bold';
@@ -265,7 +256,6 @@ body
     margin-left: 15px;
     margin-top: 15px;
     letter-spacing: -0.5px;
-
 }
 .RestaurantCardSubTitle
 {
@@ -275,4 +265,99 @@ body
     margin-left: 15px ;
     margin-top: 5px;
     letter-spacing: -0.5px;
+}
+.far.fa-heart
+{
+    position:absolute;
+    right: 25px;
+    bottom: 33px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+    background-color: white;
+    
+}
+.far.fa-heart:active, .far.fa-heart:hover
+{
+    
+       
+
+    
+}
+.fas.fa-heart
+{
+    position:absolute;
+    right: 24px;
+    bottom: 32px;
+    font-size: 29px;
+    border: none;
+    cursor: pointer;
+    color: rgb(151, 45, 177);
+}
+.GridFooter
+{
+    display: grid;
+    grid-template-columns: 5% 90% ;
+    grid-template-rows: auto auto auto auto ;
+    row-gap: 0px;
+    padding: 30px 5% 30px 5%;
+    height: 130px;
+    background-color: rgba(34, 33, 33, 0.924);
+    gap: 7px 10px;
+}
+footer
+{
+    color: white;
+    font-size: 15px;
+}
+.FooterTitle
+{
+    font-family: 'shrikhandregular';
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.FooterIconTitle
+{
+    font-family: 'Roboto-Bold';
+
+}
+.FooterGrid1
+{
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 2;
+}
+.FooterGrid2
+{
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 1;
+}
+.FooterGrid3
+{
+    grid-row: 2/ span 1;
+    grid-column: 2/ span 1;
+}
+.FooterGrid4
+{
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 1;
+}
+.FooterGrid5
+{
+    grid-row: 3/ span 1;
+    grid-column: 2/ span 1;
+}
+.FooterGrid6
+{
+    grid-row: 4/ span 1;
+    grid-column: 1/ span 2;
+}
+.FooterGrid7
+{
+    grid-row: 5/ span 1;
+    grid-column: 1/ span 2;
+}
+.FooterSubTitle
+{
+    font-family: 'Roboto';
 }
