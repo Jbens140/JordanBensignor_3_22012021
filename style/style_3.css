@@ -1,0 +1,18 @@
+.CardContainer
+{
+    bottom: 55px;
+    height: 1350px;
+}
+.far.fa-heart
+{
+    position:absolute;
+    right: 40px;
+    bottom: 1287px;
+    background-color:  rgb(243, 242, 242) ;
+}
+.fas.fa-heart
+{
+    position:absolute;
+    right: 39px;
+    bottom: 1287px;
+}

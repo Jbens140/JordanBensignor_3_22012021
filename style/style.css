@@ -253,8 +253,6 @@ body
     font-family: 'Roboto-Bold';
     color: black;
     font-size: 130%;
-    margin-left: 15px;
-    margin-top: 15px;
     letter-spacing: -0.5px;
 }
 .RestaurantCardSubTitle
@@ -262,20 +260,23 @@ body
     font-family: 'Roboto';
     color: black;
     font-size: 125%;
-    margin-left: 15px ;
-    margin-top: 5px;
     letter-spacing: -0.5px;
+}
+.GridTitle
+{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    padding: 15px 0% 0px 15px;
 }
 .far.fa-heart
 {
-    position:absolute;
-    right: 25px;
-    bottom: 33px;
     font-size: 28px;
     border: none;
     cursor: pointer;
     color: rgb(12, 12, 12);
-    background-color: white;
+    background-color:transparent;
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
     
 }
 .fas.fa-heart:hover
@@ -283,16 +284,17 @@ body
     
     color: rgb(175, 95, 155);
     opacity: 1;
+    
 }
 .fas.fa-heart
 {
-    position:absolute;
-    right: 24px;
-    bottom: 32px;
-    font-size: 30px;
+    font-size: 28px;
     border: none;
     cursor: pointer;
     opacity: 0;
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
+    
 }
 .GridFooter
 {

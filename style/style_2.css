@@ -16,27 +16,31 @@
 .CardImg
 {
     border-radius: 0px;
+    object-fit: cover;
+    height: 275px;
 
 }
 .CardTitle
 {
     font-family: 'shrikhand';
     font-size: 30px;
-    padding: 35px 0px 0px 5%;
     
+}
+.GridTitle
+{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: auto;
+    padding: 35px 5% 0px 5%
 }
 .far.fa-heart
 {
-    position:absolute;
-    right: 40px;
-    bottom: 992px;
+    
     background-color:  rgb(243, 242, 242) ;
 }
 .fas.fa-heart
 {
-    position:absolute;
-    right: 39px;
-    bottom: 992px;
+    
 }
 .CardContainer
 {
@@ -44,6 +48,7 @@
     border-radius: 35px 35px 0 0;
     position: relative;
     bottom: 55px;
+    height: 1250px;
 }
 .Dishes
 {
@@ -76,35 +81,51 @@
 .DishCard
 {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 85% 15%;
     grid-template-rows: auto auto;
     border-radius: 10px;
     background-color: white;
     margin: 0px 5% 0px 5%;
     box-shadow: rgba(82, 81, 81, 0.13) 0px 7px 7px;
     height: 70px;
+    padding: 0% 25px 0px 12px;
+    align-content: center;
+    row-gap: 3px;
 }
 .DishCardTitle
 {
     font-family: 'Roboto-Bold';
     font-size: 19px;
-    padding: 3% 0 1% 4%;
     grid-row: 1/ span 1;
     grid-column: 1/ span 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
 }
 .DishCardSubTitle
 {
     font-family: 'Roboto';
-    margin-left: 5%;
     grid-row: 2/ span 1;
     grid-column: 1/ span 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .DishCardPrice
 {
     font-family: 'Roboto-Bold';
     text-align: right;
-    margin-right: 25%;
-    margin-bottom: 10%;
     grid-row: 2/ span 1;
     grid-column: 2/ span 1;
+}
+.ButtonExploration
+{
+    padding: 0% 13% 0% 13%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 85px;
 }
