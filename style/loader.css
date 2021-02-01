@@ -1,0 +1,70 @@
+.Loader
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right:0px;
+    left:0px;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.897);
+    animation: loader 4s linear infinite;
+
+    
+}
+.Loader div
+{
+    position: absolute;
+    display: inline-block;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border:  3px solid rgba(255, 255, 255, 0);
+    background-color:lightgray;
+    margin-top: 85%;
+    
+   
+}
+.Loader div:nth-child(1)
+{
+    left: 20%;
+    animation: LoaderPoint_1 500ms  ease-in-out infinite alternate;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+}
+.Loader div:nth-child(2)
+{
+    left: 41%;
+    animation: LoaderPoint_2 500ms ease-out 200ms infinite alternate;
+}
+.Loader div:nth-child(3)
+{
+    
+    right: 20%;
+    animation: LoaderPoint_3 500ms ease-in-out 400ms infinite alternate;
+
+}
+
+
+
+@keyframes LoaderPoint_1
+{
+    0%{transform: translateY(200%);height: 25px;}
+    100%{transform: translateY(-200%); background-color: #7509f8;}
+
+}
+@keyframes LoaderPoint_2
+{
+    0%{transform: translateY(200%);height: 25px;}
+    100%{transform: translateY(-200%);background-color: #fa04b4;}
+
+}
+@keyframes LoaderPoint_3
+{
+    0%{transform: translateY(200%);height: 25px;}
+    100%{transform: translateY(-200%);background-color: #24fcc6;}
+
+}
+
+
+
