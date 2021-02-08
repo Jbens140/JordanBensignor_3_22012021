@@ -47,7 +47,7 @@
 }
 .HeaderImg
 {
-    margin: 25px 90% 15px 10%;
+    margin: 25px 0% 15px 10%;
 }
 .CardImg
 {
@@ -184,11 +184,11 @@
 }
 @keyframes checkedItem
 {
-    100%{width: 30%;}
+    100%{width: 100px;}
 }
 @keyframes notCheckedItem
 {
-    0%{width:30%;}
+    0%{width:100px;}
     100%{width: 0%;}
 }
 .fas.fa-check-circle
@@ -198,18 +198,19 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 25px;
+    font-size: 0px;
 }
 .DishCard:hover .fas.fa-check-circle
 {
     animation: checkedIcon 350ms ease-out forwards;
     color: white;
+    font-size: 25px
 }
 
 @keyframes checkedIcon
 {
     0%{ transform: rotate(90deg); opacity: 0;}
-    10%{opacity: 1;}
+    10%{opacity: 1; ;}
     100%{opacity: 1;color: white;}
 }
 .DishCard:not(:hover) .fas.fa-check-circle
